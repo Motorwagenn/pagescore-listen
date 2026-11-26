@@ -1,0 +1,7 @@
+{
+  "name": "pagescore-listen",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
