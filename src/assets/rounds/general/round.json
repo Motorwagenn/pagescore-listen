@@ -1,0 +1,80 @@
+{
+ "id": "general",
+ "title": "Demo: calm and mystery",
+ "moods": [
+  {
+   "mood": "calm",
+   "clips": [
+    {
+     "n": 1,
+     "file": "clips/1.ogg"
+    },
+    {
+     "n": 2,
+     "file": "clips/2.ogg"
+    },
+    {
+     "n": 3,
+     "file": "clips/3.ogg"
+    },
+    {
+     "n": 4,
+     "file": "clips/4.ogg"
+    },
+    {
+     "n": 5,
+     "file": "clips/5.ogg"
+    },
+    {
+     "n": 6,
+     "file": "clips/6.ogg"
+    },
+    {
+     "n": 7,
+     "file": "clips/7.ogg"
+    },
+    {
+     "n": 8,
+     "file": "clips/8.ogg"
+    }
+   ]
+  },
+  {
+   "mood": "mystery",
+   "clips": [
+    {
+     "n": 9,
+     "file": "clips/9.ogg"
+    },
+    {
+     "n": 10,
+     "file": "clips/10.ogg"
+    },
+    {
+     "n": 11,
+     "file": "clips/11.ogg"
+    },
+    {
+     "n": 12,
+     "file": "clips/12.ogg"
+    },
+    {
+     "n": 13,
+     "file": "clips/13.ogg"
+    },
+    {
+     "n": 14,
+     "file": "clips/14.ogg"
+    },
+    {
+     "n": 15,
+     "file": "clips/15.ogg"
+    },
+    {
+     "n": 16,
+     "file": "clips/16.ogg"
+    }
+   ]
+  }
+ ]
+}
