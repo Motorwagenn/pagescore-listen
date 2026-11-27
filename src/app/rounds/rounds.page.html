@@ -12,7 +12,7 @@
   </ion-header>
   <ion-list>
     @for (round of rounds(); track round.id) {
-      <ion-item>
+      <ion-item [routerLink]="['/tabs/rounds', round.id]" [detail]="true">
         <ion-label>{{ round.title }}</ion-label>
       </ion-item>
     }

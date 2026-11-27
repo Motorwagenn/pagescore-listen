@@ -13,6 +13,10 @@ export const routes: Routes = [
         loadComponent: () => import('../rounds/rounds.page').then((m) => m.RoundsPage),
       },
       {
+        path: 'rounds/:id',
+        loadComponent: () => import('../round-detail/round-detail.page').then((m) => m.RoundDetailPage),
+      },
+      {
         path: 'results',
         loadComponent: () => import('../results/results.page').then((m) => m.ResultsPage),
       },

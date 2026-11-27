@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/tabs/rounds"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{ round()?.title }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  @if (round(); as r) {
+    <ion-list>
+      @for (group of r.moods; track group.mood) {
+        <ion-list-header>
+          <ion-label>{{ group.mood }}</ion-label>
+        </ion-list-header>
+        @for (clip of group.clips; track clip.n) {
+          <ion-item>
+            <ion-label>Clip {{ clip.n }}</ion-label>
+          </ion-item>
+        }
+      }
+    </ion-list>
+  }
+</ion-content>
