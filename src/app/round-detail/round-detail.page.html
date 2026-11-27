@@ -21,6 +21,23 @@
               <ion-icon slot="icon-only" [name]="playing() === clip.n ? 'pause' : 'play'"></ion-icon>
             </ion-button>
           </ion-item>
+
+          <ion-item>
+            <ion-segment [value]="ratingService.get(id(), clip.n)?.fits"
+                        (ionChange)="setFits(clip, $any($event.detail.value))">
+              <ion-segment-button value="yes"><ion-label>Fits</ion-label></ion-segment-button>
+              <ion-segment-button value="no"><ion-label>Doesn't fit</ion-label></ion-segment-button>
+            </ion-segment>
+          </ion-item>
+
+          <ion-item>
+            <ion-segment [value]="ratingService.get(id(), clip.n)?.quality"
+                        (ionChange)="setQuality(clip, $any($event.detail.value))">
+              <ion-segment-button value="good"><ion-label>Good</ion-label></ion-segment-button>
+              <ion-segment-button value="ok"><ion-label>Ok</ion-label></ion-segment-button>              
+              <ion-segment-button value="bad"><ion-label>Bad</ion-label></ion-segment-button>
+            </ion-segment>
+          </ion-item>
         }
       }
     </ion-list>

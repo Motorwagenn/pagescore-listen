@@ -19,3 +19,10 @@ export interface Clip {
     n: number;
     file: string;
 }
+
+export interface ClipRating {
+  roundId: string;
+  n: number;
+  fits: string | null;     // 'yes' | 'no'
+  quality: string | null;  // 'good' | 'ok' | 'bad'
+}
