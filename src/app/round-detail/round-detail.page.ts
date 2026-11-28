@@ -30,7 +30,7 @@ export class RoundDetailPage implements OnInit {
       this.playing.set(null);
       return;
     }
-    this.audio.src = `assets/rounds/${this.id()}/${clip.file}`;
+    this.audio.src = this.roundService.clipUrl(this.id(), clip.file);
     this.audio.play();
     this.playing.set(clip.n);
   }
